@@ -4,7 +4,7 @@ import re
 案例地址：http://www.ygdy8.net/html/gndy/dyzz/20170129/53080.html
 '''
 #打开文件
-f = open('detail.html','r')
+f = open('resource/detail.html','r')
 html = f.read()
 f.close()
 
@@ -27,18 +27,18 @@ v_detail_image = re.findall('window.open\(\'(.*?)\'\);" border', html)[1]
 
 #下载图片到本地
 
-# print vname
-# print v_country
-# print v_category
-# print v_language
-# print v_screan_lang
-# print v_imdb
-# print v_size
-# print v_length
-# print v_director
-# print v_actors.split('<br />')
-# print v_actors
-# print v_intro
-# print v_ftp
-#print v_main_image
-#print v_detail_image
+print vname
+print v_country
+print v_category
+print v_language
+print v_screan_lang
+print v_imdb
+print v_size
+print v_length
+print v_director
+print v_actors.split('<br />')
+print v_actors
+print v_intro
+print v_ftp
+print v_main_image
+print v_detail_image
